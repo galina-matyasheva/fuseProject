@@ -1,0 +1,164 @@
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #48842e;
+}
+
+.container {
+  margin: 50px auto;
+  width: 1180px;
+
+  .filter {
+    padding: 70px 0 50px;
+
+    .filter__input {
+      padding: 0 15px;
+      width: 418px;
+      height: 50px;
+      border: 1px solid #d8d8d8;
+      border-radius: 25px;
+
+        &:focus {
+         outline: none;
+        }
+      }
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .gallery__card {
+        margin-bottom: 30px;
+        width: 379px;
+        background-color: #f8f8f8;
+        border: 1px solid #d8d8d8;
+
+      .gallery-card__img-wrap {
+        position: relative;
+        width: 100%;
+
+          .gallery-card__img {
+            width: 100%;
+          }
+
+          .gallery-card__house-type {
+            position: absolute;
+            bottom: 5px;
+            right: 0;
+            padding: 2px 0;
+            width: 120px;
+            font-size: 12px;
+            font-weight: 600;
+            text-align: center;
+            color: #fff;
+          }
+        }
+       }
+
+        .gallery-card__text {
+          padding: 15px;
+
+        .gallery-card__text-title {
+          line-height: 27px;
+        }
+
+        p {
+         line-height: 27px;
+        }
+
+        .gallery-card__text-address {
+          padding-bottom: 10px;
+        }
+
+        .gallery-card__text-ownership {
+          font-size: 14px;
+        }
+
+        .gallery-card__price {
+          font-weight: 600;
+        }
+      }
+    }
+
+  .container__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #d8d8d8;
+    border-radius: 25px;
+    background-color: #fff;
+
+    &:focus {
+      outline: none;
+    }
+
+    .container-button__i {
+      display: inline-block;
+      padding: 5px;
+      border: solid black;
+      border-width: 0 2px 2px 0;
+     }
+
+    .container-button_arrow {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+     width: 100%;
+     padding: 0 5%;
+
+      .gallery {
+        .gallery__card {
+          width: 47%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .container {
+    .filter {
+      display: flex;
+      flex-direction: column;
+
+      .filter__label {
+        margin-bottom: 15px;
+      }
+
+      .filter__input {
+        width: 100%;
+      }
+    }
+
+    .gallery {
+      justify-content: center;
+			
+      .gallery__card {
+        width: 100%;
+      }
+    }
+  }
+}

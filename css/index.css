@@ -1,0 +1,106 @@
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+h1 {
+  color: #48842e;
+  font-size: 36px;
+  text-align: center; }
+
+.container {
+  margin: 50px auto;
+  width: 1180px; }
+  .container .filter {
+    padding: 70px 0 50px; }
+    .container .filter .filter__input {
+      padding: 0 15px;
+      border: 1px solid #d8d8d8;
+      border-radius: 25px;
+      height: 50px;
+      width: 418px; }
+      .container .filter .filter__input:focus {
+        outline: none; }
+  .container .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .container .gallery .gallery__card {
+      width: 379px;
+      background-color: #f8f8f8;
+      border: 1px solid #d8d8d8;
+      margin-bottom: 30px; }
+      .container .gallery .gallery__card .gallery-card__img-wrap {
+        position: relative;
+        width: 100%; }
+        .container .gallery .gallery__card .gallery-card__img-wrap .gallery-card__img {
+          width: 100%; }
+        .container .gallery .gallery__card .gallery-card__img-wrap .gallery-card__house-type {
+          position: absolute;
+          bottom: 5px;
+          right: 0;
+          color: #fff;
+          font-size: 12px;
+          font-weight: 600;
+          width: 120px;
+          padding: 2px 0;
+          text-align: center; }
+    .container .gallery .gallery-card__text {
+      padding: 15px; }
+      .container .gallery .gallery-card__text .gallery-card__text-title {
+        line-height: 27px; }
+      .container .gallery .gallery-card__text p {
+        line-height: 27px; }
+      .container .gallery .gallery-card__text .gallery-card__text-address {
+        padding-bottom: 10px; }
+      .container .gallery .gallery-card__text .gallery-card__text-ownership {
+        font-size: 14px; }
+      .container .gallery .gallery-card__text .gallery-card__price {
+        font-weight: 600; }
+  .container .container__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid #d8d8d8;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    background-color: #fff; }
+    .container .container__button:focus {
+      outline: none; }
+    .container .container__button .container-button__i {
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 5px; }
+    .container .container__button .container-button_arrow {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg); }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 5%; }
+    .container .gallery .gallery__card {
+      width: 47%; } }
+
+@media screen and (max-width: 920px) {
+  .container .filter {
+    display: flex;
+    flex-direction: column; }
+    .container .filter .filter__label {
+      margin-bottom: 15px; }
+    .container .filter .filter__input {
+      width: 100%; }
+  .container .gallery {
+    justify-content: center; }
+    .container .gallery .gallery__card {
+      width: 100%; } }
